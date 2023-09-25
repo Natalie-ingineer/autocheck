@@ -1,0 +1,276 @@
+/* *
+  |============================
+  |         Header styles
+  |============================
+*/
+
+/**
+  |============================
+  | mobile window
+  |============================
+*/
+
+.menu-btn {
+  display: none;
+}
+
+.logo {
+  margin-right: 120px;
+}
+
+.nav-list {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-list-item {
+  display: flex;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--background-color);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  display: block;
+  padding: 24px 0;
+  position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+  color: var(--color-button-nav);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-button-nav);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-button-nav);
+  transform: scaleX(0);
+  transition: transform 250ms linear;
+  bottom: -1px;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.current::after {
+  transform: scaleX(1);
+}
+
+.nav-list-contacts {
+  font-style: normal;
+  margin-left: auto;
+}
+.contacts-list {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-list-link {
+  color: var(--primary-color-text);
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-list-link:hover,
+.contacts-list-link:focus {
+  color: var(--color-button-nav);
+}
+
+/**
+  |============================
+  | Hero 
+  |============================
+*/
+
+.hero {
+}
+
+.main-page {
+  font-size: 56px;
+  line-height: 1.07;
+  text-transform: none;
+  min-width: 496px;
+  margin-bottom: 36px;
+}
+
+/**
+  |============================
+  |      Concept
+  |============================
+*/
+
+.concept-list {
+  max-width: 768px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.concept-title {
+  text-align: left;
+}
+
+.concept-item {
+  flex-basis: calc((100% - 24px) / 2);
+}
+
+/**
+  |============================
+  |      TEAM
+  |============================
+*/
+
+.team-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 24px;
+}
+
+.team-item {
+  flex-basis: calc((100%-24px) / 2);
+}
+
+/**
+  |============================
+  |          Customers
+  |============================
+*/
+
+.customers-list {
+  row-gap: 72px;
+  column-gap: 24px;
+  margin: 0 auto;
+}
+
+.costomers-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+/**
+  |============================
+  |         Portfolio
+  |============================
+*/
+
+.portfolio {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.portfolio-button-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 64px;
+  justify-content: center;
+}
+
+.prj-card-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  justify-content: flex-start;
+}
+
+.item-card {
+  width: calc((100% - 24px) / 2);
+}
+
+/**
+  |============================
+  |        Footer styles
+  |============================
+*/
+
+.footer .container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footer-box {
+  margin-bottom: 0;
+}
+
+.footer-logo-web {
+  text-align: start;
+}
+
+.footer-socials {
+  text-align: start;
+}
+
+.footer-text {
+  text-align: start;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-subtitle {
+  text-align: start;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.footer-socials-wraper {
+  margin-bottom: 0;
+}
+
+.footer-subscribe {
+  margin: 0;
+}
+
+.footer-form-input {
+  min-width: 264px;
+  margin-bottom: 0;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-btn {
+  margin-top: 0;
+}
+
+/**
+  |============================
+  |    Modal window
+  |============================
+*/
+
+.modal {
+  max-width: 408px;
+  width: 100%;
+}
